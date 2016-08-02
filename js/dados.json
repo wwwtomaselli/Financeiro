@@ -1,0 +1,35 @@
+[{
+    "data": "10/02/2016",
+    "desc": "Nippon Shop",
+    "cat": "Eletro",
+    "tipo": "D",
+    "valor": 99.90
+},
+{
+    "data": "10/03/2016",
+    "desc": "Pagamento",
+    "cat": "Salário",
+    "tipo": "C",
+    "valor": 2500.00
+},
+{
+    "data": "15/03/2016",
+    "desc": "Farmácia",
+    "cat": "Medicamento",
+    "tipo": "D",
+    "valor": 88.75
+},
+{
+    "data": "20/03/2016",
+    "desc": "Farmácia",
+    "cat": "Medicamentos",
+    "tipo": "D",
+    "valor": 45.10
+},
+{
+    "data": "10/04/2016",
+    "desc": "Pagamento",
+    "cat": "Salário",
+    "tipo": "C",
+    "valor": 2500.00
+}]
