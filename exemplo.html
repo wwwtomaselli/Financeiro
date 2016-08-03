@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Backbone</title>
+        <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css'>
+        
+        <script type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
+        <script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js'></script>
+        <script type='text/javascript' src='bower_components/underscore/underscore.js'></script>
+        <script type='text/javascript' src='bower_components/backbone/backbone.js'></script>
+        <script type='text/javascript' src='js/modelo.js'></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){
+            var lista_cidades = new ListaCidades(); //Cidade({nome: 'Jaguariaíva', uf: 'PR'});
+            lista_cidades.fetch();
+            
+            var html = new Listagem({model: lista_cidades});
+            // html.render();
+            
+            $("#btn").click(function(){
+               lista_cidades.get(14).set("nome", "Bento Gonçalves");
+               lista_cidades.get(14).save();
+            });
+        });    
+        </script>
+    </head>
+    <body>
+        <ul id="lista">
+            <li>Blumenau</li>
+        </ul>
+        
+        <button id="btn">Clique aqui!</button>
+    </body>
+</html>
